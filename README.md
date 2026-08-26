@@ -58,8 +58,6 @@ how the plan is going, and how much each step cost.
 - **File names you can click.** When the model writes a file name in its answer,
   the panel checks that the file is really there and makes it a link. Click it
   to open the file, at the right line.
-- **You can see when memory was used.** If the model pulled in your memory
-  files, the panel says so and lets you open them.
 - **A line where the chat was compacted.** When old messages are summarised to
   free up room, you see where it happened and how much was saved.
 - **You know it is waiting, not stuck.** If the model has to wait or try again,
