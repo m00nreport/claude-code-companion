@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/icon.png" width="112" alt="Claude Code Companion">
+</p>
+
 # Claude Code Companion
 
 **Claude Code Companion** is an extension for Anthropic's official Claude Code.
