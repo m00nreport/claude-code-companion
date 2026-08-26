@@ -51,6 +51,23 @@ how the plan is going, and how much each step cost.
 - Voice input (dictation)
 - Follows your VS Code theme, light or dark
 
+## Small things you feel every day
+
+- **Web search with its sources.** When the model searches the web, you see how
+  many sources it found and which sites they came from. Click one to open it.
+- **File names you can click.** When the model writes a file name in its answer,
+  the panel checks that the file is really there and makes it a link. Click it
+  to open the file, at the right line.
+- **You can see when memory was used.** If the model pulled in your memory
+  files, the panel says so and lets you open them.
+- **A line where the chat was compacted.** When old messages are summarised to
+  free up room, you see where it happened and how much was saved.
+- **You know it is waiting, not stuck.** If the model has to wait or try again,
+  the panel says that instead of looking frozen.
+- **Your own answer to a question.** Every question card has an "Other" row, so
+  you are never stuck with only the options the model thought of.
+- **Click any image to see it big.**
+
 ## The settings menu
 
 Open the settings menu in the message box to set:
