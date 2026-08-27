@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.2
+
+### Fixed
+
+- **The panel could freeze after Stop.** If you sent a message while Claude was
+  working and then pressed Stop, the turn ended but the panel kept saying
+  "Waiting for Claude" and never moved again.
+- Pressing Stop when nothing was running left the spinner on screen.
+- If Claude refused to stop, the panel said nothing and looked stuck.
+
 ## 0.1.1
 
 The first release.
