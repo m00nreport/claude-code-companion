@@ -2,6 +2,12 @@
   <img src="https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/icon.png" width="112" alt="Claude Code Companion">
 </p>
 
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=m00nreport.claude-code-companion-vscode"><img src="https://vsmarketplacebadges.dev/version/m00nreport.claude-code-companion-vscode.svg?style=flat-square&color=d97757&label=marketplace" alt="Marketplace version"></a>
+  <img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="MIT licence">
+  <img src="https://img.shields.io/badge/VS%20Code-1.90%2B-blue?style=flat-square" alt="Requires VS Code 1.90 or newer">
+</p>
+
 # Claude Code Companion for VS Code
 
 **Claude Code Companion** is an extension for Anthropic's official Claude Code.
