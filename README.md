@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/icon.png" width="112" alt="Claude Code Companion">
 </p>
 
-# Claude Code Companion
+# Claude Code Companion for VS Code
 
 **Claude Code Companion** is an extension for Anthropic's official Claude Code.
 It is built on the same public `@anthropic-ai/claude-agent-sdk`. It adds its own
