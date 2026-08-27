@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.3
+
+### Fixed
+
+- **The model list could open past the bottom of the panel.** In a narrow panel,
+  such as a side-by-side editor or a window sharing the screen, the menu that
+  opens from Settings had nowhere to go sideways, so it covered Settings and ran
+  off the bottom. The last models were cut off and nothing scrolled to them.
+  Menus now stay above the message box, whichever way they open.
+- **"Allow everything" would not take on a session already running.** Picking it
+  showed a banner asking you to start a new session, and only worked once VS
+  Code had been restarted. It applies to the session in front of you now.
+
 ## 0.1.2
 
 ### Fixed
