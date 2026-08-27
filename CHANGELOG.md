@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.4
+
+### Changed
+
+- **The bundled Claude Agent SDK is now 0.3.247**, six releases on from 0.3.241.
+  Nothing in the panel changes; this is the machinery underneath it keeping up
+  with Claude Code itself.
+
 ## 0.1.3
 
 ### Fixed
