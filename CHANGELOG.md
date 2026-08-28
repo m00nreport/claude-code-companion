@@ -2,6 +2,14 @@
 
 ## 0.1.5
 
+### Added
+
+- **An Answer style row in the settings menu**: Default, Concise, Explanatory
+  or Learning. Concise trims the talking rather than the work, Explanatory
+  says why as it goes, and Learning teaches while it works and asks you to
+  write some of the code yourself. It is chosen as a session starts, so a
+  change applies from the next one.
+
 ### Changed
 
 - **The microphone is now a switch under Settings > Appearance, and it is off

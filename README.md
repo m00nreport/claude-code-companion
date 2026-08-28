@@ -83,6 +83,11 @@ Open the settings menu in the message box to set:
 - **Model** - all the models Claude Code offers, plus other Anthropic models you
   add yourself (see `claudeCodeCompanion.olderModels` below).
 - **Effort level** - how hard the model thinks, from low to max.
+- **Answer style** - Default, Concise, Explanatory or Learning. Concise trims
+  the talking rather than the work, Explanatory says why as it goes, and
+  Learning teaches while it works and asks you to write some of the code
+  yourself. It is chosen as a session starts, so a change applies from the
+  next one.
 - **Send mode** - Steer, Interrupt, or Queue (see above).
 
 ![The model menu, with the models Claude Code offers and older ones you add yourself](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/settings-models.png)
