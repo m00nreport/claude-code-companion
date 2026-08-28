@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3.0
+## 0.2.1
 
 The numbers above the message box used to stand still for as long as Claude was
 working, and jump the moment it stopped.
