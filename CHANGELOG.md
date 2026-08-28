@@ -7,6 +7,13 @@ working, and jump the moment it stopped.
 
 ### Fixed
 
+- **"The limit is reached" is now red, and readable.** It was the hardest line
+  on screen to read while being the most important one on it: it shared a
+  colour with the line that only says the limit is CLOSE, and that colour came
+  from a theme setting almost no theme sets, so on many themes it landed
+  somewhere dim. The two now look different, because they mean different
+  things - one is advice while your work still goes through, the other means
+  nothing goes through until the window resets.
 - **The cost, the token count and the context bar now move while Claude works.**
   They only ever updated when a turn finished, so a long piece of work showed
   the same figures from beginning to end - and on a session that had been quiet
