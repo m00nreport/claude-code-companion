@@ -1,5 +1,65 @@
 # Changelog
 
+## 0.2.0
+
+A release of small things you notice, and one whole class of bug: anything the
+panel worked out for itself used to disappear when the window reloaded.
+
+### Added
+
+- **Dismiss a plan you have walked away from.** The plan pin only ever left on
+  its own when every step finished, so a plan the task moved past sat above the
+  message box with a spinner on a step nobody was doing. There is an x on the
+  row now. It says `Plan dismissed` in the chat, and it tells Claude too - so
+  the next step it takes is not spent putting the same plan back.
+- **An arrow back to the newest message.** Scroll up a long way and it appears
+  over the chat. Click it to come back; it goes away by itself once you are
+  there.
+- **A workflow's agents are a table.** They were eight lines of free text that
+  lined up nowhere. Now each row has its own columns - what ran, which model,
+  the tokens, the time - with a tick when it is done and a red cross when it
+  failed. Hover a row and you also see **the prompt that agent was sent**,
+  which the panel had never shown at all.
+- **Custom answer styles are now offered.** The list used to be the four
+  built-in ones, typed out. It is Claude Code's own list now, so a style you
+  wrote yourself in `.claude/output-styles/` can be picked like any other.
+
+### Changed
+
+- **Your settings belong to the conversation, not to the extension.** Choose
+  Opus in one tab and Haiku in another, reload the window, and each tab comes
+  back the way you left it. A new tab still opens with whatever you chose last,
+  which is the part that was always right. This is the model, the reasoning
+  effort, the answer style, the sending mode, the permission mode and every
+  switch.
+- **A new tab no longer opens with the recalled memory over the top of it.**
+  The list of sessions to reopen is the whole of the opening screen again. The
+  memory is still there - it moves to the top of the chat as soon as you say
+  something.
+
+### Fixed
+
+- **A link in an answer opened two browser tabs.** One was ours and one was the
+  editor's. Now it opens one.
+- **A workflow came back from a reload with no agents at all** - `workflow -
+  done` over `No agents yet.` Nothing a run reports about itself is written to
+  the session file, so the panel keeps its own copy. The phases, the rows and
+  their figures all come back now.
+- **A dismissed plan came back after a reload.** Same cause: the plan is rebuilt
+  from the session file every time a tab reopens, and there is nowhere in that
+  file for "the reader threw this away" to live.
+- **A reopened session under-reported what it had cost, for the rest of its
+  life.** Claude Code starts its own counter over when a session resumes, so
+  the first answer after a reload replaced the figure with a smaller one. What
+  was spent before is added to it now instead.
+- **The answer style you chose was forgotten**, and the menu showed `Default`
+  over a session that was running something else. It is remembered now, and the
+  row says what is actually in force - including a style set in your own
+  `~/.claude/settings.json`, which the panel had no way of knowing about.
+- **A slash command came back from a reload as raw XML** in place of the
+  command you typed.
+- **A session that ran for a long time slowly grew a list it never emptied.**
+
 ## 0.1.5
 
 ### Added

@@ -33,7 +33,9 @@ how the plan is going, and how much each step cost.
 
 - **Task Planner.** The model makes a to-do list and keeps it at the top of the
   chat. Each step gets a check when it is done. When it finishes, you can see
-  how long each step took and how many tokens it used.
+  how long each step took and how many tokens it used. If the work moves on and
+  the plan is stale, there is an x to put it away - Claude is told, so it does
+  not simply record the same plan again.
 
   ![The plan pinned above the chat, and the finished plan with time and tokens for each step](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/task-planner.png)
 
@@ -46,6 +48,10 @@ how the plan is going, and how much each step cost.
 - **Remote Control.** Turn on one switch to open the session in the Claude app
   on your phone. From the phone you can type, allow a tool, change the model, or
   stop the work. It is full control, not just reading.
+- **Workflows as a table.** When a run fans out to many agents at once, each one
+  gets a row: what ran, which model, the tokens, the time, with a tick when it
+  is done. Hover a row to see the prompt that agent was sent and what it
+  answered.
 
 ## Everything the official extension does, too
 
@@ -74,6 +80,12 @@ how the plan is going, and how much each step cost.
   the panel says that instead of looking frozen.
 - **Your own answer to a question.** Every question card has an "Other" row, so
   you are never stuck with only the options the model thought of.
+- **An arrow back to the newest message.** Scroll up a long way and it appears
+  over the chat. Click it to come back; it goes away by itself once you are
+  there.
+- **Every tab keeps its own settings.** Choose one model in one tab and another
+  in the next; reload the window and each comes back the way you left it. A new
+  tab opens with whatever you chose last.
 - **Click any image to see it big.**
 
 ## The settings menu
@@ -83,11 +95,14 @@ Open the settings menu in the message box to set:
 - **Model** - all the models Claude Code offers, plus other Anthropic models you
   add yourself (see `claudeCodeCompanion.olderModels` below).
 - **Reasoning effort** - how hard the model thinks, from low to extra high.
-- **Answer style** - Default, Concise, Explanatory or Learning. Concise trims
-  the talking rather than the work, Explanatory says why as it goes, and
-  Learning teaches while it works and asks you to write some of the code
-  yourself. It is chosen as a session starts, so a change applies from the
-  next one.
+- **Answer style** - Default, Concise, Explanatory or Learning, plus any style
+  you have written yourself in `.claude/output-styles/`. Concise trims the
+  talking rather than the work, Explanatory says why as it goes, and Learning
+  teaches while it works and asks you to write some of the code yourself. It is
+  chosen as a session starts, so a change applies from the next one. Under
+  Default the row also names what that turns out to be, since a style set in
+  your own `~/.claude/settings.json` is one the panel would otherwise have no
+  way to tell you about.
 - **Sending mid-turn** - Steer, Interrupt or Queue (see above).
 
 ![The model menu, with the models Claude Code offers and older ones you add yourself](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/settings-models.png)
