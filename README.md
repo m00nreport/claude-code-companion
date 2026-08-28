@@ -95,6 +95,8 @@ Open the settings menu in the message box to set:
   - **Context meter** - how full the context is
   - **Plan limit meters** - your 5-hour and weekly limits
   - **Tool call chain** - open tool calls instead of folding them
+  - **Microphone** - speak into the message box instead of typing. Off until
+    you turn it on; see the last section of this page for why.
 
 ![The Appearance menu, with a switch for each part of the panel](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/settings-appearance.png)
 
@@ -137,3 +139,39 @@ session. It opens in an editor tab. You can also press `Ctrl+Alt+C`
   right away, so you can read and answer it from your phone. **Off by default.
   Read this before you turn it on:** it lets your phone control this computer,
   and anyone signed in to that account can control it too.
+
+## Your Claude account, and what this does with it
+
+This panel is a window onto Claude Code, not a second way into Claude. Nearly
+everything here works by running the `claude` program exactly as Anthropic
+published it, and drawing what it reports.
+
+- **It never asks you for a password, a token or an API key**, and it reads
+  none to run a session. Signing in happens in Claude Code's own flow, in your
+  browser, on Anthropic's pages. Your usage is billed to you by Anthropic under
+  the plan you already have.
+- **There is no account here and no server here.** This extension has no
+  backend, nothing to sign up for, and nowhere of its own to send anything.
+- **No telemetry, no analytics, no crash reporting.** There is no such library
+  in it, and the panel itself cannot reach the network at all - it is loaded
+  under a `default-src 'none'` Content Security Policy.
+- **Nothing of yours is uploaded, indexed or copied anywhere** beyond what
+  Claude Code itself does with the folder you opened.
+- **What it keeps, it keeps on this machine**, in VS Code's own storage: your
+  settings, the model list, the rate-limit figures on the bar, and any image
+  you drop on the message box. That is the whole list.
+
+Two features are the exception, and both are **off until you turn them on**:
+
+- **Microphone** (Settings > Appearance) sends what you say to Anthropic's
+  speech service, using the Claude sign-in already on this machine.
+- **Remote** (the button by the message box) opens a session on claude.ai under
+  that same sign-in, so you can read and answer it from your phone. It is a
+  two-way channel: anyone signed in to that account can then drive this
+  computer.
+
+Both reach `api.anthropic.com` and nowhere else. Those two, and Claude Code
+itself, are every outbound connection this extension is capable of making.
+
+Not affiliated with, endorsed by or sponsored by Anthropic. Claude and Claude
+Code are Anthropic's.
