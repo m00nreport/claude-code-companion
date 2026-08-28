@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.3.0
+
+The numbers above the message box used to stand still for as long as Claude was
+working, and jump the moment it stopped.
+
+### Fixed
+
+- **The cost, the token count and the context bar now move while Claude works.**
+  They only ever updated when a turn finished, so a long piece of work showed
+  the same figures from beginning to end - and on a session that had been quiet
+  for a while, that reads as a panel that has stopped. They are read from Claude
+  Code itself every couple of seconds now, and they are the same numbers it
+  would report at the end, only sooner. Nothing is estimated.
+
+### Changed
+
+- **Both plan limits are shown, not whichever one is fuller.** The pill showed
+  a single percentage with no way to tell which limit it was about, so a weekly
+  limit filling up behind a quiet five-hour one had nothing on screen to say
+  so. It reads `H 84% - W 46%` now: **H** for the five-hour window, **W** for
+  the weekly one, each always in the same place. Hover it for when each one
+  resets. It still appears on its own once either window passes 80%, and the
+  "Plan limits" switch still keeps it visible all the time.
+
 ## 0.2.0
 
 A release of small things you notice, and one whole class of bug: anything the
