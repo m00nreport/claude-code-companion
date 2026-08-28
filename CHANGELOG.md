@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.1.5
+
+### Changed
+
+- **The microphone is now a switch under Settings > Appearance, and it is off
+  until you turn it on.** Dictation is the one feature here that uses your
+  Claude sign-in for a request the panel makes itself, rather than for one
+  Claude Code makes, and Anthropic reserves that sign-in for Claude Code and
+  its own applications. Nothing is removed: the switch is one click, and the
+  row explains itself on hover.
+- **The Remote button now says whose sign-in it opens the session under.** It
+  always used the Claude sign-in already on your machine; the tooltip only
+  described what the button did, not what it did it with.
+- **The README has a section on what this does with your Claude account** - no
+  account or server of its own, no telemetry or analytics of any kind, the
+  whole list of what is kept on this machine, and every outbound connection it
+  is capable of making.
+
+### Fixed
+
+- **The dictation connection no longer identifies itself as Anthropic's own
+  client.** It had been sending two headers copied from the official
+  extension, which made its traffic indistinguishable from the real thing.
+  That was wrong however it is read, and it is gone.
+
 ## 0.1.4
 
 ### Changed
