@@ -44,7 +44,14 @@ how the plan is going, and how much each step cost.
 - **Send Modes - Steer, Interrupt, Queue.** You can send a message while the
   model is still working. **Steer** adds it to the work now. **Interrupt** stops
   the work now. **Queue** waits until the work is done. You pick the one you want
-  for each message.
+  for each message. A message that is still waiting says `in queue`, and stops
+  saying it the moment Claude picks it up - so you never have to guess whether
+  it landed.
+- **Slash commands show their work.** A command like `/code-review` does its
+  thinking in a session of its own. Instead of a long silence, you get a box
+  named after the command that fills in as it goes: what it reads, what it
+  runs, what it concludes. It is drawn differently from the agents Claude
+  starts for itself, because this one is something you asked for by name.
 - **Remote Control.** Turn on one switch to open the session in the Claude app
   on your phone. From the phone you can type, allow a tool, change the model, or
   stop the work. It is full control, not just reading.

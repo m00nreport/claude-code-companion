@@ -1,5 +1,61 @@
 # Changelog
 
+## 0.3.0
+
+Three things the panel could not show you before, and one file that was being
+loaded after you had told it not to be.
+
+### Added
+
+- **A slash command that runs on its own now shows its work.** Commands like
+  `/code-review` do their thinking in a session of their own, and the panel
+  used to show nothing at all while they did it - no row, no progress, not even
+  a spinner - so a review that took a minute was indistinguishable from a panel
+  that had stopped. There is a box for it now, named after the command you
+  typed, and it fills in as the work happens: what it is reading, what it is
+  running, what it is thinking. It says `running` with a count of steps while it
+  goes and `done` when it lands, and it is drawn differently from the agents
+  Claude starts for itself, because one is something you asked for by name.
+- **A message you send while Claude is working says whether it is waiting.**
+  You can type while a turn is in flight, but the message looked the same
+  whether it had been picked up or was still sitting in line. It now says
+  `in queue` until the moment it is actually taken into the work, and stops
+  saying it then rather than when the whole turn ends.
+- **Hints that fit what they are describing.** Every hover hint in the panel is
+  drawn by the panel now. They wrap onto several lines, so the ones that carry
+  a whole prompt or an agent's answer are readable rather than a single line
+  running off the edge - and they appear on macOS, where the system ones were
+  reported missing.
+
+### Fixed
+
+- **A CLAUDE.md you excluded was loaded anyway, if you wrote the drive letter
+  in capitals.** On Windows, a pattern written `C:/work/CLAUDE.md` never
+  matched, so the file it named went on loading every session while the setting
+  looked correct. Measured on this workspace: 32,753 instruction tokens with
+  the exclusion silently doing nothing, 5,931 with it working. Written either
+  way, it works now.
+- **The context hover now adds up to the whole window.** It listed the three
+  biggest things in the context and stopped, so a fresh session reading 23%
+  full showed 38k of a 45k total and simply did not say where the other 7k had
+  gone. Every category is listed now, smallest included.
+- **Your session list no longer fills with sessions you never opened.** Work
+  Claude runs in the background leaves its own record beside yours, and the
+  list was showing those too - five of eleven rows on a new tab, in one case.
+  Only sessions somebody actually opened are offered now.
+- **The history list offers ten sessions instead of hiding five behind a
+  scroll.** It said fifteen, which pushed the message box down and put the last
+  rows below the fold on a laptop or in a narrow side panel.
+- **The plan-limit meter switch turns the meter off.** Unticking it did nothing
+  once a limit passed 80%, which is exactly when anyone opens that menu. Off
+  means off now, at any percentage.
+- **A collapsed plan is no longer one stray click from being thrown away.** The
+  x that dismisses it is gone entirely while the pin is collapsed, rather than
+  merely invisible - it could still be clicked, and still be reached with Tab.
+- **Removing an attachment puts the cursor back in the message box.** Removing
+  a chip, clearing them all, or waving away the file you have open used to drop
+  focus onto the page, so the next thing you typed went nowhere.
+
 ## 0.2.1
 
 The numbers above the message box used to stand still for as long as Claude was
