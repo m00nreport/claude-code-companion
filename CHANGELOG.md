@@ -9,6 +9,8 @@
   judgement to you.
 - That same warning was repeated once per turn, so it stacked up the
   transcript.
+- A message still in the queue offered Rewind, which had nothing to undo
+  yet. Its “in queue” note now sits where that button was.
 
 ## 0.5.1
 
