@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.5.0
+
+### Added
+
+- **Your machine, offered to your other devices.** A Device button beside
+  Remote in the composer: switch it on and you can start a session in this
+  folder from claude.ai or the Claude app. It stays on across a window
+  reload.
+- **Session History says which sessions were started somewhere else**, so the
+  ones that came from elsewhere are not lost among the rest.
+- **A switch to hide the Remote and Device buttons**, under Appearance. One
+  that is connected stays on screen either way.
+
+### Fixed
+
+- Sessions started from another device did not appear in Session History.
+- The Remote hover named the session by an id instead of its title.
+- Sending a message shifted the transcript when Claude picked it up.
+
 ## 0.4.0
 
 ### Added
