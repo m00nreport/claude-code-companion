@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.1
+
+### Fixed
+
+- The Device button did not say that a folder Claude has never been run in
+  needs its trust prompt accepted in a terminal first, so the first press
+  there failed instead of explaining itself.
+
 ## 0.5.0
 
 ### Added
