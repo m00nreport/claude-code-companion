@@ -1,5 +1,36 @@
 # Changelog
 
+## 0.4.0
+
+### Added
+
+- **Claude can read your VS Code terminals.** It sees what is running there and
+  what it printed, so it stops starting a service that is already up and stops
+  asking you to paste a log. Only terminals inside VS Code; one it could not
+  follow is reported as unreadable rather than as idle. New `terminals`
+  setting, on by default.
+- **Sessions name themselves.** The tab and the history list get a real title
+  instead of the first line you typed. `aiSessionTitles` turns it off.
+- **The history list is wider**, so titles are no longer cut off.
+- **The command menu shows what each agent is for.**
+- **Editor menus and keyboard shortcuts reach the composer.** Right-click a
+  selection for Ask, Explain or Add tests; right-click a file to start a
+  session with it; shortcuts to send the selection and to jump to the
+  conversation.
+- **The live status line says what Claude is doing** - thinking or writing -
+  instead of only that it is busy.
+- **Dictation languages are listed by name**, with a field for a language code
+  that is not on the list.
+
+### Fixed
+
+- A message sent while Claude was working could disappear after a reload.
+- The "Recalled from memory" line landed in the wrong place, or out of sight.
+- Recent Sessions showed six rows instead of ten.
+- Time-ago labels were rounded twice and could be off by an hour.
+- Reopening a session is faster.
+- Turning the terminals setting off now stops collection, not just the tools.
+
 ## 0.3.0
 
 Three things the panel could not show you before, and one file that was being
