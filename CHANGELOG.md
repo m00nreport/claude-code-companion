@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.5.2
+
+### Fixed
+
+- The usage warning claimed you were close to a limit while printing a
+  number that said otherwise. It now states the share and leaves the
+  judgement to you.
+- That same warning was repeated once per turn, so it stacked up the
+  transcript.
+
 ## 0.5.1
 
 ### Fixed
