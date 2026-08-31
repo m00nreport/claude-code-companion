@@ -41,36 +41,70 @@ how the plan is going, and how much each step cost.
 
 - **Stop All.** Some agents keep working in the background after a turn ends.
   One button stops all of them at once.
+
+  ![The activity strip above the message box, and one Stop all button](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/stop-all.png)
+
 - **Send Modes - Steer, Interrupt, Queue.** You can send a message while the
   model is still working. **Steer** adds it to the work now. **Interrupt** stops
   the work now. **Queue** waits until the work is done. You pick the one you want
   for each message. A message that is still waiting says `in queue`, and stops
   saying it the moment Claude picks it up - so you never have to guess whether
   it landed.
+
+  ![The Sending mid-turn menu, with Steer, Interrupt and Queue](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/send-modes.png)
+
+  ![A sent message marked in queue](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/queued-message.png)
+
 - **Slash commands show their work.** A command like `/code-review` does its
   thinking in a session of its own. Instead of a long silence, you get a box
   named after the command that fills in as it goes: what it reads, what it
   runs, what it concludes. It is drawn differently from the agents Claude
   starts for itself, because this one is something you asked for by name.
+
+  ![A slash command in a box of its own, with the tools it ran](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/forked-skill.png)
+
 - **Remote Control.** Turn on one switch to open the session in the Claude app
   on your phone. From the phone you can type, allow a tool, change the model, or
   stop the work. It is full control, not just reading.
+
+  ![The message box with Remote switched on](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/remote.png)
+
 - **Workflows as a table.** When a run fans out to many agents at once, each one
   gets a row: what ran, which model, the tokens, the time, with a tick when it
   is done. Hover a row to see the prompt that agent was sent and what it
   answered.
 
+  ![A workflow as a table: one row per agent, with model, tokens and time](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/workflow-table.png)
+
 ## Everything the official extension does, too
 
 - Chat in an editor tab, with live Markdown replies and code blocks you can copy
 - Asks you before it runs a tool
+
+  ![A permission card asking before a command runs](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/permission.png)
+
 - Shows file changes as a diff, and lets you undo them
+
+  ![A file change as a diff, with Discard and Open](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/file-edits.png)
+
 - Plan mode: you see and agree the plan before the work starts
 - Slash commands - agents, skills, and more
 - Add files with `@`, paste or drop images, and send the file you have open
+
+  ![Files attached to the message box as chips](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/attachments.png)
+
 - Answer the model's questions right in the panel
+
+  ![A question card with four options, one of them Other](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/questions.png)
+
 - Shows the cost, the tokens, and how full the context is
+
+  ![The cost, token, context and plan-limit meters on the message box](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/usage-meters.png)
+
 - Past sessions: open, rename, and go back to them
+
+  ![The opening screen, listing recent sessions](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/session-history.png)
+
 - Voice input (dictation)
 - Follows your VS Code theme, light or dark
 
@@ -78,15 +112,32 @@ how the plan is going, and how much each step cost.
 
 - **Web search with its sources.** When the model searches the web, you see how
   many sources it found and which sites they came from. Click one to open it.
+
+  ![A web search showing how many sources it found and which sites](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/web-search.png)
+
 - **File names you can click.** When the model writes a file name in its answer,
   the panel checks that the file is really there and makes it a link. Click it
   to open the file, at the right line.
+
+  ![An answer with a code block and file names drawn as links](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/clickable-paths.png)
+
 - **A line where the chat was compacted.** When old messages are summarised to
   free up room, you see where it happened and how much was saved.
+
+  ![A line across the chat saying where it was compacted and how much was saved](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/compaction.png)
+
 - **You know it is waiting, not stuck.** If the model has to wait or try again,
   the panel says that instead of looking frozen.
+
+  ![Lines saying it is retrying, and when each limit resets](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/waiting.png)
+
 - **Your own answer to a question.** Every question card has an "Other" row, so
   you are never stuck with only the options the model thought of.
+- **What it recalled from memory.** When Claude reads something out of its
+  memory, the panel shows which files it came from and what it took from each.
+
+  ![A fold showing what was recalled from memory, and from which files](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/memory.png)
+
 - **An arrow back to the newest message.** Scroll up a long way and it appears
   over the chat. Click it to come back; it goes away by itself once you are
   there.
@@ -124,6 +175,8 @@ Open the settings menu in the message box to set:
   - **Tool call chain** - open tool calls instead of folding them
   - **Microphone** - speak into the message box instead of typing. Off until
     you turn it on; see the last section of this page for why.
+  - **Remote and Device** - the two controls that reach other devices. One
+    that is connected stays on screen either way.
 
 ![The Appearance menu, with a switch for each part of the panel](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/settings-appearance.png)
 
