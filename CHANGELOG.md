@@ -1,5 +1,33 @@
 # Changelog
 
+## 0.5.4
+
+### Changed
+
+- **The README shows the panel rather than describing it.** Seventeen more
+  pictures, one for each feature that had none, each cropped to the thing it
+  is about.
+
+## 0.5.3
+
+### Added
+
+- **A compaction says so while it happens.** When the conversation is folded
+  into a summary, a line says so where it happens and the strip above the
+  message box reads Compacting. If the fold fails, the reason stays on screen.
+
+### Fixed
+
+- A question card opened with its first option looking already chosen.
+- The Appearance menu scrolled on a short window instead of opening as tall
+  as the room above it.
+- Hints disappeared while Claude was working, several times a second.
+- Long hints ran as one block of prose; they are paragraphs now.
+- The context meter promised auto-compaction at 97%, which is not where it
+  happens.
+- A Russian message often got an English tab title, and a title could carry
+  a typo through from the message it named.
+
 ## 0.5.2
 
 ### Fixed
