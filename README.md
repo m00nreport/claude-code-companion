@@ -69,6 +69,17 @@ how the plan is going, and how much each step cost.
 
   ![The message box with Remote switched on](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/remote.png)
 
+- **Messages between sessions.** Claude can send a message to another Claude
+  session on your machine - a tab beside this one, or one working in a different
+  folder. It arrives in the chat as a card that says who it came from, sitting
+  where it landed rather than at the bottom. Each card is one line until you
+  click it, so a long exchange between two of them does not take over the
+  screen, and what Claude sends is shown the same way.
+
+  ![A message from another Claude session, and the reply going back](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/session-messages.png)
+
+  ![The same message opened, showing what was said](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/session-message-open.png)
+
 - **Workflows as a table.** When a run fans out to many agents at once, each one
   gets a row: what ran, which model, the tokens, the time, with a tick when it
   is done. Hover a row to see the prompt that agent was sent and what it

@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.5.5
+
+### Added
+
+- **Messages between Claude sessions show up in the chat.** One session can
+  message another on your machine, and both sides are now cards saying who it
+  came from or went to. Each is one line until you click it.
+
+### Fixed
+
+- Memories were only found on Windows, so on macOS and Linux none loaded.
+
 ## 0.5.4
 
 ### Changed
