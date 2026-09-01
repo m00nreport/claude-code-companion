@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.8
+
+### Added
+
+- **The panel keeps up while subagents work.** A background agent reporting
+  progress no longer rebuilds the whole conversation, so a long session stays
+  as smooth as a short one.
+
 ## 0.5.7
 
 ### Added
