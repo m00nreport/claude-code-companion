@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.5.7
+
+### Added
+
+- **The panel keeps up while Claude writes.** The streamed reply no longer
+  redraws the whole conversation on every word, so typing, scrolling and the
+  panel itself stay smooth on a long session.
+
+### Fixed
+
+- The start of a long answer vanished while a subagent was working, and came
+  back only when the answer finished.
+- Scrolling stuttered while background work was running.
+
 ## 0.5.6
 
 ### Added
