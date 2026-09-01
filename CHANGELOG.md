@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.5.6
+
+### Added
+
+- **Claude can run a command in a VS Code terminal you watch.** It opens a
+  terminal of its own in the editor panel, so a test run or a dev server is on
+  screen as it happens. Your own terminals are never used.
+- **A memory that did not fit is named.** Claude is told which ones were left
+  out of the budget and where they are, instead of only how many.
+- **A memory can be pinned.** Add `pinned: true` to its front matter and it is
+  carried first, whatever its size. There is no opposite.
+
+### Fixed
+
+- Closing a session tab threw "Webview is disposed", once per tab closed.
+- A memory whose front matter ran long was sorted by file date instead of its
+  own.
+
 ## 0.5.5
 
 ### Added
