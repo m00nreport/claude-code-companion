@@ -69,6 +69,17 @@ how the plan is going, and how much each step cost.
 
   ![The message box with Remote switched on](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/remote.png)
 
+- **Claude sees your VS Code terminals.** Ask what is running and it looks: the
+  command, how long it has been going, what it printed, and how it ended. So it
+  can read a failing build or a dev server log itself instead of asking you to
+  paste it, and it will not start a second server on a port you already have
+  one on. Only the terminals inside VS Code - a separate console window is
+  invisible to it - and one that was already open before the window started is
+  reported as unreadable rather than as idle. There is a switch in Settings if
+  you would rather it did not look.
+
+  ![Claude listing what runs in the editor's terminals and what each one is doing](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/terminal-awareness.png)
+
 - **Messages between sessions.** Claude can send a message to another Claude
   session on your machine - a tab beside this one, or one working in a different
   folder. It arrives in the chat as a card that says who it came from, sitting
