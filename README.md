@@ -8,9 +8,9 @@
   <img src="https://img.shields.io/badge/VS%20Code-1.90%2B-blue?style=flat-square" alt="Requires VS Code 1.90 or newer">
 </p>
 
-# Claude Code Companion for VS Code
+# Companion for Claude Code - Subagent Tree & Live Thinking
 
-**Claude Code Companion** is an extension for Anthropic's official Claude Code.
+**Companion for Claude Code** is an extension for Anthropic's official Claude Code.
 It is built on the same public `@anthropic-ai/claude-agent-sdk`. It adds its own
 panel that runs its own chat and shows the parts of a long run that you usually
 cannot see: what the subagents are doing right now, what the model is thinking,

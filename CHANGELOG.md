@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.9
+
+### Changed
+
+- **The extension is now called Companion for Claude Code.** Same extension and
+  the same settings; only the name on the Marketplace listing changed. In
+  VS Code the side bar icon still reads Claude Code Companion.
+
 ## 0.5.8
 
 ### Added
