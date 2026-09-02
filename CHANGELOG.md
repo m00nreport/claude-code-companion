@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.5.10
+
+### Added
+
+- **The extension is now on Open VSX.** It installs in Cursor, Windsurf and
+  VSCodium as well as in VS Code.
+
+### Changed
+
+- The plan pin names the step being worked on - `Step 3 of 5` - instead of
+  counting the ones behind it.
+- The listing shows the subagent tree, a workflow and the plan filling in as an
+  animation instead of a still picture.
+
 ## 0.5.9
 
 ### Changed
