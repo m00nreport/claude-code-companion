@@ -23,7 +23,7 @@ how the plan is going, and how much each step cost.
   if it is still working, and how many tokens it used. You can stop any one of
   them, so you always know what is going on.
 
-  ![The subagent tree, with running and finished agents and a Stop all button](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/sub-agents.png)
+  ![Asking a question, then the subagent tree filling in, a workflow opening to show each of its agents with its model and tokens, and the plan pinning above them](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/live-session.gif)
 
 - **Live Thinking.** You can watch the model think while it works. The words
   come in slowly, so a long thought is easy to read. You can show one line, a
