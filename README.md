@@ -39,6 +39,17 @@ how the plan is going, and how much each step cost.
 
   ![The plan pinned above the chat, and the finished plan with time and tokens for each step](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/task-planner.png)
 
+- **Where the session is working, and a worktree for it.** A row above the
+  message box says which folder this session is in and which branch it is on,
+  and follows a checkout you make in Source Control while the tab is open.
+  Before you have said anything, the worktree pill is an offer: press it and
+  this session moves into a git worktree of its own - same tab, same window -
+  so an agent can work on a branch while you carry on in yours. It turns
+  orange once you are in one, because the rest of VS Code still shows the main
+  checkout.
+
+  ![The folder and branch of a worktree the session moved into](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/worktree.png)
+
 - **Stop All.** Some agents keep working in the background after a turn ends.
   One button stops all of them at once.
 
