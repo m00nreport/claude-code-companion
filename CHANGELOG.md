@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.5.12
+
+### Added
+
+- **A session says where it is working.** A row above the message box names the
+  folder and the branch, and follows a checkout you make in Source Control
+  while the tab is open. Switch it off under Settings, Appearance.
+- **A session can move into a git worktree of its own.** Before you have said
+  anything, press the worktree pill: the session carries on in the same tab and
+  the same window, working in a fresh tree beside your repository. It turns
+  orange once you are in one.
+
+### Fixed
+
+- The subagent card grew a line while an agent was running and shrank again
+  when it stopped.
+
 ## 0.5.11
 
 ### Fixed
