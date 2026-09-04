@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.5.13
+
+### Added
+
+- **The folder and branch row follows the repository you are working in.** In a
+  workspace that holds several repositories, it names the one your session is
+  writing to rather than the folder the session started in.
+
+### Fixed
+
+- A reopened session was missing every message from a turn a connection error
+  had interrupted, and its plan came back a step behind.
+- A question left unanswered when the VS Code window reloaded now says so in
+  the conversation.
+
 ## 0.5.12
 
 ### Added
