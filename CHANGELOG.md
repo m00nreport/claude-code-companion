@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.5.14
+
+### Added
+
+- **Claude is told when a command it started in a VS Code terminal finishes.**
+  A test run or a build that takes longer than the wait no longer needs
+  chasing: the exit code arrives on its own, in the conversation.
+- **Reading a terminal says whether the command is still running or has
+  finished, and with what exit code.**
+
+### Fixed
+
+- The rewind list offered messages nobody typed, which also made it pick the
+  wrong point when the same thing had been asked twice.
+- A terminal whose command ended without VS Code reporting it stayed marked as
+  running, and was never used again.
+
 ## 0.5.13
 
 ### Added
