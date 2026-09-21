@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.5.15
+
+### Fixed
+
+- A question Claude asks sits in the conversation now, so you can scroll up for
+  what was said before answering it. On a small VS Code window it used to fill
+  the panel and push the message box off the bottom.
+- The summary a compaction leaves behind arrived as a message you had sent. It
+  is folded under the "Context compacted" line.
+- A reopened session that had been compacted began with that summary and said
+  nothing about a compaction.
+
 ## 0.5.14
 
 ### Added
