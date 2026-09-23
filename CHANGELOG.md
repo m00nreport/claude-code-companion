@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.5.16
+
+### Added
+
+- **The activity strip has a face.** Its spinner is the Companion's mascot
+  now, with a face for what Claude is doing at that moment.
+- **A running tool call or subagent spins.** A pulsing dot now means only a
+  message still waiting in the queue.
+- **The permission card says where an MCP tool comes from:** your settings,
+  this project, a plugin.
+- **A request Claude Code marks as risky opens on Deny,** so a stray Enter
+  cannot approve it, and offers no Allow for session when the rule would allow
+  more than this one call.
+
+### Fixed
+
+- A reopened session counted its cost twice once it answered again.
+- The last dictated word could go missing on Send, or come back in the empty
+  message box.
+- The last dictated word stayed off screen until you spoke again.
+- Editing dictated text with the microphone on could put a deleted word back.
+- The context tooltip listed the auto-compact reserve as if it took up room.
+- The activity strip, the subagent list and the plan pin differed in height by
+  a couple of pixels.
+
 ## 0.5.15
 
 ### Fixed
