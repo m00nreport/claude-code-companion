@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.18
+
+### Fixed
+
+- A copied reply that was all one quote lost its numbers and bullets in Slack
+  and kept a `>` on every line in Telegram.
+
 ## 0.5.17
 
 ### Added
