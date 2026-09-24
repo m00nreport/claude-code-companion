@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.5.17
+
+### Added
+
+- **An MCP server can ask you something.** A form it needs filled in, or a
+  sign-in page to open, shows as a card in the conversation instead of being
+  turned down without a word.
+- **A reply can be copied with its formatting.** Tables, lists and bold paste
+  as they look into Google Docs, Word, Notion or Slack, and as Markdown into an
+  editor or a terminal.
+- **A session tab wears a blue dot** when Claude is waiting for your answer, or
+  when a turn ended while you were looking elsewhere. The Sessions list shows
+  the same.
+
+### Changed
+
+- A running tool call or subagent spins green, the colour it ends in, and a
+  running subagent no longer has a blue frame.
+- Menus highlight the row under the pointer in grey instead of VS Code's blue.
+
+### Fixed
+
+- An expired sign-in now puts the Sign in button under the reply that says so.
+- A row in the running subagents list was taller than the activity strip.
+- Subagents nested inside another box ran together in some themes.
+
 ## 0.5.16
 
 ### Added

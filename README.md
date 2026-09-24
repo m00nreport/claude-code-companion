@@ -166,6 +166,14 @@ how the plan is going, and how much each step cost.
 
 - **Your own answer to a question.** Every question card has an "Other" row, so
   you are never stuck with only the options the model thought of.
+- **An MCP server can ask you too.** When a server needs a form filled in or a
+  sign-in page opened, it shows as a card in the chat instead of failing
+  quietly.
+- **Copy a reply with its formatting.** Tables, lists and bold paste as they
+  look into Google Docs, Word, Notion or Slack, and as Markdown into an editor.
+- **A dot on the tab that wants you.** A blue dot on a session's tab says
+  Claude is waiting for your answer, or finished while you were looking
+  elsewhere.
 - **What it recalled from memory.** When Claude reads something out of its
   memory, the panel shows which files it came from and what it took from each.
 
