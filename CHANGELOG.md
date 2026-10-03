@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.5.19
+
+### Added
+
+- **A file shows while Claude is still writing it.** The path, how many lines
+  so far and the newest of them appear at once, and the activity strip names
+  the file instead of saying "Thinking".
+- **A tool row opens onto its whole command,** with a Copy button.
+
+### Fixed
+
+- "Failed to authenticate" stayed in the conversation after signing in again.
+- The Proactive answer style had no description.
+
 ## 0.5.18
 
 ### Fixed

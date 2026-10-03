@@ -194,10 +194,11 @@ Open the settings menu in the message box to set:
 - **Model** - all the models Claude Code offers, plus other Anthropic models you
   add yourself (see `claudeCodeCompanion.olderModels` below).
 - **Reasoning effort** - how hard the model thinks, from low to extra high.
-- **Answer style** - Default, Concise, Explanatory or Learning, plus any style
-  you have written yourself in `.claude/output-styles/`. Concise trims the
-  talking rather than the work, Explanatory says why as it goes, and Learning
-  teaches while it works and asks you to write some of the code yourself. It is
+- **Answer style** - Default, Concise, Explanatory, Learning or Proactive, plus
+  any style you have written yourself in `.claude/output-styles/`. Concise trims
+  the talking rather than the work, Explanatory says why as it goes, Learning
+  teaches while it works and asks you to write some of the code yourself, and
+  Proactive gets on with it instead of asking about routine decisions. It is
   chosen as a session starts, so a change applies from the next one. Under
   Default the row also names what that turns out to be, since a style set in
   your own `~/.claude/settings.json` is one the panel would otherwise have no
