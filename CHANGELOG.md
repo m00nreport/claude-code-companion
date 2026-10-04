@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.5.21
+
+### Added
+
+- **A workflow agent's row opens onto its work.** Click it to see what the
+  agent thought, ran and edited, filling in while it works.
+- **A running workflow agent shows how long it has been working.** The time
+  counts up every second.
+
+### Changed
+
+- Workflow agents waiting for their turn show as queued.
+
+### Fixed
+
+- Workflow rows said "Default (recommended)" instead of naming the model.
+- After a window reload, "1 subagent working" could stay up for a workflow
+  that had ended.
+- A workflow kept showing as running after its session ended.
+- A workflow agent that was stopped or cut off showed a tick, as if it had
+  finished.
+- Switching models with `/model` could move the model picker to Default.
+
 ## 0.5.20
 
 ### Added
