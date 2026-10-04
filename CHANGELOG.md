@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.5.20
+
+### Added
+
+- **`/clear` starts a new conversation in the tab.** The old one leaves the
+  screen under a "Conversation cleared" line, the cost and tokens start again,
+  and the next message names the tab. The earlier conversation stays in Recent
+  sessions.
+- **A command running in the background shows its output and can be
+  stopped.** Open its row to watch the output arrive. It is listed above the
+  message box until it ends, with its own Stop.
+
+### Changed
+
+- A file Claude was writing folds away when it is done instead of vanishing.
+
+### Fixed
+
+- With reduced motion turned on, messages, folds and the typing caret still
+  animated.
+- The activity strip said "Running Bash" about a command running in the
+  background.
+
 ## 0.5.19
 
 ### Added
