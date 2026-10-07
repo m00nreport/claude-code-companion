@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.22
+
+### Fixed
+
+- The Device button stayed yellow while this machine was connected and
+  listed on your other devices.
+
 ## 0.5.21
 
 ### Added
