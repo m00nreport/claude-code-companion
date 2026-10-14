@@ -138,7 +138,8 @@ how the plan is going, and how much each step cost.
 
   ![The opening screen, listing recent sessions](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/session-history.png)
 
-- Voice input (dictation), on your own Deepgram key
+- Voice input (dictation), on your own Deepgram key -
+  [how to set it up](#for-the-microphone-a-deepgram-key)
 - Follows your VS Code theme, light or dark
 
 ## Small things you feel every day
@@ -244,6 +245,22 @@ npm install -g @anthropic-ai/claude-code
 
 If your copy is in a special place, set `claudeCodeCompanion.claudePath` in
 Settings.
+
+### For the microphone: a Deepgram key
+
+Dictation is the one feature that does not go through Claude Code. It sends
+what you say to [Deepgram](https://deepgram.com), on your own account, and it
+is off until you turn it on:
+
+1. Sign up at [console.deepgram.com](https://console.deepgram.com). A new
+   account comes with free credit and asks for no card.
+2. Create an API key there.
+3. In the panel, turn on Settings > Appearance > **Microphone**, press the
+   microphone, and paste the key when it asks.
+
+The key is kept in VS Code's secret storage. **Chatty: Set Deepgram Key**
+replaces it and **Chatty: Forget Deepgram Key** removes it. What it costs past
+the free credit is Deepgram's to say: [deepgram.com/pricing](https://deepgram.com/pricing).
 
 ## Getting started
 
