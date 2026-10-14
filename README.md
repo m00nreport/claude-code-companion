@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/icon.png" width="112" alt="Claude Code Companion">
+  <img src="https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/icon.png" width="112" alt="Chatty">
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=m00nreport.claude-code-companion-vscode"><img src="https://vsmarketplacebadges.dev/version/m00nreport.claude-code-companion-vscode.svg?style=flat-square&color=d97757&label=marketplace" alt="Marketplace version"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=m00nreport.claude-code-companion-vscode"><img src="https://vsmarketplacebadges.dev/version/m00nreport.claude-code-companion-vscode.svg?style=flat-square&color=ff9a8b&label=marketplace" alt="Marketplace version"></a>
   <img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="MIT licence">
   <img src="https://img.shields.io/badge/VS%20Code-1.90%2B-blue?style=flat-square" alt="Requires VS Code 1.90 or newer">
 </p>
 
-# Companion for Claude Code - Subagent Tree & Live Thinking
+# Chatty Powered by Claude: Subagent Tree & Live Thinking
 
-**Companion for Claude Code** is an extension for Anthropic's official Claude Code.
+**Chatty** is an extension for Anthropic's official Claude Code.
 It is built on the same public `@anthropic-ai/claude-agent-sdk`. It adds its own
 panel that runs its own chat and shows the parts of a long run that you usually
 cannot see: what the subagents are doing right now, what the model is thinking,
@@ -138,7 +138,7 @@ how the plan is going, and how much each step cost.
 
   ![The opening screen, listing recent sessions](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/session-history.png)
 
-- Voice input (dictation)
+- Voice input (dictation), on your own Deepgram key
 - Follows your VS Code theme, light or dark
 
 ## Small things you feel every day
@@ -216,7 +216,9 @@ Open the settings menu in the message box to set:
   - **Plan limit meters** - your 5-hour and weekly limits
   - **Tool call chain** - open tool calls instead of folding them
   - **Microphone** - speak into the message box instead of typing. Off until
-    you turn it on; see the last section of this page for why.
+    you turn it on; see the last section of this page for why. It switches
+    itself off when you send, after 30 seconds without words, and after two
+    minutes at most.
   - **Remote and Device** - the two controls that reach other devices. One
     that is connected stays on screen either way.
 
@@ -245,7 +247,7 @@ Settings.
 
 ## Getting started
 
-Click the Claude Code Companion icon on the left side bar and start a new
+Click the Chatty icon on the left side bar and start a new
 session. It opens in an editor tab. You can also press `Ctrl+Alt+C`
 (`Cmd+Alt+C` on a Mac).
 
@@ -283,17 +285,19 @@ published it, and drawing what it reports.
   settings, the model list, the rate-limit figures on the bar, and any image
   you drop on the message box. That is the whole list.
 
-Two features are the exception, and both are **off until you turn them on**:
+One feature is the exception, and it is **off until you turn it on**:
+**Microphone** (Settings > Appearance) sends what you say to Deepgram, on
+**your own** Deepgram account. The first time, it asks for an API key - a new
+account at [console.deepgram.com](https://console.deepgram.com) comes with free
+credit and asks for no card. The key is kept in VS Code's secret storage, and
+"Chatty: Forget Deepgram Key" removes it. Deepgram, and Claude Code itself, are
+every outbound connection this extension is capable of making; your Claude
+sign-in is never read by it.
 
-- **Microphone** (Settings > Appearance) sends what you say to Anthropic's
-  speech service, using the Claude sign-in already on this machine.
-- **Remote** (the button by the message box) opens a session on claude.ai under
-  that same sign-in, so you can read and answer it from your phone. It is a
-  two-way channel: anyone signed in to that account can then drive this
-  computer.
-
-Both reach `api.anthropic.com` and nowhere else. Those two, and Claude Code
-itself, are every outbound connection this extension is capable of making.
+**Remote** (the button by the message box) is not an exception: it asks Claude
+Code to open the session on claude.ai itself, under its own sign-in, the same
+way Anthropic's own extension does. It is a two-way channel all the same:
+anyone signed in to that account can then drive this computer.
 
 Not affiliated with, endorsed by or sponsored by Anthropic. Claude and Claude
 Code are Anthropic's.

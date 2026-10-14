@@ -1,5 +1,40 @@
 # Changelog
 
+## 0.6.0
+
+### Changed
+
+- **The extension is now Chatty.** Commands, settings, the side bar and new
+  tabs say Chatty, and the icon and panel are salmon. Your settings carry over.
+- **Remote Control is opened by Claude Code itself.** The switch works as
+  before. A mode changed on your phone shows in the panel, and "Allow
+  everything" can only be turned on in VS Code.
+- **Dictation runs on your own Deepgram account.** The first time you switch
+  the microphone on, it asks for a Deepgram API key; a new account comes with
+  free credit. "Chatty: Forget Deepgram Key" removes it.
+- The microphone switches off when you send, and after 30 seconds without
+  words.
+- **Sign in opens a terminal** running Claude Code's own sign-in, where a code
+  can be pasted if the browser cannot finish it.
+- Chatty no longer reads your Claude sign-in for anything.
+
+### Added
+
+- **"What can Chatty do?" on the opening screen.** It starts a guided tour of
+  the panel that takes follow-up questions.
+- **A subagent row shows the effort it was dispatched with**, when one was set.
+- **The place row follows work into a worktree beside the repository**, and
+  lets go of it once the worktree is removed.
+
+### Fixed
+
+- Switching the microphone on in a second tab failed instead of taking it over.
+- A recalled memory was shown as raw text instead of formatted.
+- A model, effort or mode picked while a new tab was starting could be lost.
+- Opening another conversation mid-answer could carry lines of the old answer
+  into it.
+- Session titles now come from Haiku 5.5 with the newest Claude Code.
+
 ## 0.5.22
 
 ### Fixed
