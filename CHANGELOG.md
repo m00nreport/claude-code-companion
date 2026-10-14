@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.6.2
+
+### Added
+
+- **A quote in a reply has its own Copy.** It copies only the quoted text,
+  without the `>` marks, so a drafted message pastes on its own.
+
+### Fixed
+
+- A reply pasted with formatting joined lines that were meant to stay apart,
+  such as a sign-off over a name.
+
 ## 0.6.1
 
 ### Fixed
