@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.1
+
+### Fixed
+
+- A session title could come out in a different language from the conversation.
+
 ## 0.6.0
 
 ### Changed
