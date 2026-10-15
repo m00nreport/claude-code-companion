@@ -91,6 +91,15 @@ how the plan is going, and how much each step cost.
 
   ![Claude listing what runs in the editor's terminals and what each one is doing](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/terminal-awareness.png)
 
+- **Files Claude wants you to see, right in the chat.** A screenshot it took, a
+  screen recording, a report it wrote: instead of opening a folder for you to
+  dig through, it puts the file in the conversation. Pictures and videos appear
+  as a preview you can enlarge, copy or save, and Markdown appears rendered.
+  Any other file gets a card that opens it in VS Code or shows it in its
+  folder. Ask it to show you a file and it does the same.
+
+  ![A screenshot and a Markdown report Claude put in the chat, each with Copy, Save as, Show in folder and Open](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/file-previews.png)
+
 - **Messages between sessions.** Claude can send a message to another Claude
   session on your machine - a tab beside this one, or one working in a different
   folder. It arrives in the chat as a card that says who it came from, sitting
@@ -154,12 +163,6 @@ how the plan is going, and how much each step cost.
   to open the file, at the right line.
 
   ![An answer with a code block and file names drawn as links](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/clickable-paths.png)
-
-- **Files Claude wants you to see, in the chat.** A screenshot it took, a
-  recording, a report it wrote: pictures and videos appear as a preview you can
-  enlarge, copy or save, and Markdown appears rendered. Any other file gets a
-  card that opens it in VS Code or shows it in its folder. Ask it to show you a
-  file and it does the same.
 
 - **A line where the chat was compacted.** When old messages are summarised to
   free up room, you see where it happened and how much was saved.
