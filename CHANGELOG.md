@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.6.3
+
+### Added
+
+- **Claude can show you a file right in the chat.** Pictures and videos appear
+  as a preview you can enlarge, copy or save, and Markdown appears rendered.
+  Any other file gets a card that opens it in VS Code or shows it in its
+  folder. "File previews" in Appearance turns it off.
+
+### Fixed
+
+- A file name in a reply opened nothing when the file was a picture, a PDF or
+  anything else that is not text.
+
 ## 0.6.2
 
 ### Added

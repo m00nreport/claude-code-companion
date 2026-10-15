@@ -155,6 +155,12 @@ how the plan is going, and how much each step cost.
 
   ![An answer with a code block and file names drawn as links](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/clickable-paths.png)
 
+- **Files Claude wants you to see, in the chat.** A screenshot it took, a
+  recording, a report it wrote: pictures and videos appear as a preview you can
+  enlarge, copy or save, and Markdown appears rendered. Any other file gets a
+  card that opens it in VS Code or shows it in its folder. Ask it to show you a
+  file and it does the same.
+
 - **A line where the chat was compacted.** When old messages are summarised to
   free up room, you see where it happened and how much was saved.
 
@@ -216,12 +222,14 @@ Open the settings menu in the message box to set:
   - **Context meter** - how full the context is
   - **Plan limit meters** - your 5-hour and weekly limits
   - **Tool call chain** - open tool calls instead of folding them
+  - **File previews** - Claude can show you a file right in the chat
   - **Microphone** - speak into the message box instead of typing. Off until
     you turn it on; see the last section of this page for why. It switches
     itself off when you send, after 30 seconds without words, and after two
     minutes at most.
   - **Remote and Device** - the two controls that reach other devices. One
     that is connected stays on screen either way.
+  - **Folder, branch, worktree** - the strip above the message box
 
 ![The Appearance menu, with a switch for each part of the panel](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/settings-appearance.png)
 
