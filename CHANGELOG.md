@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.6.4
+
+### Added
+
+- **The Settings button shows the model and the reasoning effort.** It reads
+  like `Opus 5.5 · XH`, its tooltip spells both out, and it turns purple while
+  Ultracode is on.
+
+### Fixed
+
+- A subagent forked from the conversation came back empty after the session
+  was reopened.
+- Two subagents given the same task could show each other's work after the
+  session was reopened.
+- A background notice could appear in the chat as if you had written it.
+
 ## 0.6.3
 
 ### Added
