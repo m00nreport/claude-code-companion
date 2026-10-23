@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.6.5
+
+### Added
+
+- **A turn started on a timer is marked in the chat.** A reply that came from
+  `/loop` or a scheduled task sits under a line reading "Scheduled wakeup" or
+  "Scheduled task", with the time.
+
+### Fixed
+
+- A video in a chat card could play without sound.
+- A video's full-screen button did nothing. Double-click the video to enlarge
+  it.
+- A session could fail to start while a slow start-up hook was running.
+
 ## 0.6.4
 
 ### Added
