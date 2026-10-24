@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.6
+
+### Fixed
+
+- Ctrl+C on text selected in the chat copied nothing and moved the cursor into
+  the message box.
+
 ## 0.6.5
 
 ### Added
