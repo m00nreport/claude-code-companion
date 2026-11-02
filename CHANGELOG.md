@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.6.7
+
+### Added
+
+- **A long session left idle is compacted before its cache runs out.** After
+  most of an hour without activity, a conversation over 200K tokens is folded
+  into a summary, so the next message does not pay to read all of it again.
+  Set `"idleCompaction": false` in settings.json to turn it off.
+- **Words of your own for dictation.** `claudeCodeCompanion.dictationKeyterms`
+  lists names and terms the microphone should expect.
+
+### Changed
+
+- **A long session stays quick.** The chat draws its newest 150 messages and
+  draws older ones as you scroll up.
+- Sessions follow VS Code's telemetry setting: with it off, they send no usage
+  metrics or error reports.
+
+### Fixed
+
+- Dictation left out words said in a different language from the one it was
+  set to.
+- A subagent given more work after it had finished did not show as working.
+
 ## 0.6.6
 
 ### Fixed

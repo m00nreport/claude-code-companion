@@ -287,6 +287,8 @@ session. It opens in an editor tab. You can also press `Ctrl+Alt+C`
   Claude Code shows.
 - `claudeCodeCompanion.dictationLanguage` - the language the microphone listens
   for.
+- `claudeCodeCompanion.dictationKeyterms` - names and terms the microphone
+  should expect, such as a product or a library you say often.
 - `claudeCodeCompanion.remoteAtStartup` - open every new session on claude.ai
   right away, so you can read and answer it from your phone. **Off by default.
   Read this before you turn it on:** it lets your phone control this computer,
@@ -306,7 +308,9 @@ published it, and drawing what it reports.
   backend, nothing to sign up for, and nowhere of its own to send anything.
 - **No telemetry, no analytics, no crash reporting.** There is no such library
   in it, and the panel itself cannot reach the network at all - it is loaded
-  under a `default-src 'none'` Content Security Policy.
+  under a `default-src 'none'` Content Security Policy. Claude Code itself
+  follows VS Code's telemetry setting: turn it off there, and the sessions this
+  panel starts send no usage metrics or error reports.
 - **Nothing of yours is uploaded, indexed or copied anywhere** beyond what
   Claude Code itself does with the folder you opened.
 - **What it keeps, it keeps on this machine**, in VS Code's own storage: your
