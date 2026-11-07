@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.6.8
+
+### Added
+
+- **A warning before your Claude sign-in runs out.** About a week ahead, a banner
+  offers Sign in, so a session does not stop in the middle of your work.
+
+### Fixed
+
+- A session that could not start said "Interrupted", though nobody had pressed
+  Stop.
+- Signing in left the signed-out banner up in other tabs.
+- Pressing Sign in from a second tab opened a second login.
+
 ## 0.6.7
 
 ### Added
