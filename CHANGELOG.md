@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.9
+
+### Fixed
+
+- The chat jumped up and down around each tool call when scrolled to the bottom.
+- The chat dropped by a line when a reply ending in a list, code block or table
+  finished.
+- A code block in a reply still being written flickered as it closed.
+
 ## 0.6.8
 
 ### Added
