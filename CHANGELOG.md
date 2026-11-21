@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.7.0
+
+### Added
+
+- **Archive past sessions.** Recent sessions gains Archive; archived ones wait
+  in a fold under the list, where they can be brought back or deleted.
+- **A suggested next message.** After a reply, the empty box shows in grey what
+  you would probably say next, and Tab or → takes it. Switch it off under
+  Appearance.
+- **/mcp shows the session's MCP servers as a card:** each one's status, where
+  it is set up, and its tools or its error.
+- **Warnings about the session.** When settings, hooks or permission rules did
+  not load, the conversation says so, on the opening screen too.
+- **An Experimental group in Settings,** with two of Claude Code's experiments:
+  Code Mode, where Claude writes one script that runs the tools, and agent
+  teams, where named agents message each other.
+
 ## 0.6.9
 
 ### Fixed
