@@ -233,6 +233,11 @@ Open the settings menu in the message box to set:
   - **Remote and Device** - the two controls that reach other devices. One
     that is connected stays on screen either way.
   - **Folder, branch, worktree** - the strip above the message box
+  - **Prompt suggestions** - a likely next message, greyed into the empty box,
+    taken with Tab or →
+  - **Subagent progress line** - a few words on what a running subagent is
+    doing. Off until you turn it on: Claude Code writes each line with an
+    extra request for every running subagent
 
 ![The Appearance menu, with a switch for each part of the panel](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/settings-appearance.png)
 

@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.7.1
+
+### Added
+
+- **An overwritten file shows what changed.** When Claude rewrites a file that
+  already exists, its row shows the changed lines and where they are, instead
+  of the whole file as new.
+
+### Changed
+
+- The line saying what a running subagent is doing is off by default, because
+  each one costs an extra request. Turn it on under Appearance, Subagent
+  progress line.
+- A new session is named by Claude Code itself, with no request of its own.
+- Reopening a session after a reload is quicker.
+- A plan no longer spends an extra request closing its last step.
+- Fewer background requests while Claude works.
+
+### Fixed
+
+- A renamed session went back to its old name in Recent Sessions after the
+  next message.
+- A name given to a new tab before its first message was lost after a reload.
+- Renaming a session in Recent Sessions did not rename its open tab.
+- A workflow agent's token count disappeared and came back while it ran.
+- A long idle session was not compacted before its cache ran out if the window
+  had been reloaded.
+- Typing after @ to mention a file could lag in a large workspace.
+
 ## 0.7.0
 
 ### Added
