@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.7.2
+
+### Changed
+
+- **A long path keeps its file name in view.** A changed file's row and a Read
+  row show the last three folders, and the full path is on hover.
+
+### Fixed
+
+- A file name with hidden text-direction characters could be drawn as a
+  different name.
+
 ## 0.7.1
 
 ### Added
