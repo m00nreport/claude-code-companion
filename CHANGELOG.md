@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.3
+
+### Fixed
+
+- After Send or Stop the cursor is back in the input, so the next message can
+  be typed straight away.
+
 ## 0.7.2
 
 ### Changed
