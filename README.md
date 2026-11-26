@@ -118,9 +118,9 @@ how the plan is going, and how much each step cost.
 
   ![A workflow as a table: one row per agent, with model, tokens and time](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/workflow-table.png)
 
-- **Radio.** Music in a strip above the message box while Claude works. Press
-  + to pick from popular stations by genre or search the open Radio Browser
-  directory, and listen to a station before you add it. Play, pause, skip or
+- **Radio.** Music in a strip above the message box while Claude works. Point at
+  the strip and press + to pick from popular stations by genre or search the
+  open Radio Browser directory, and listen to a station before you add it. Play, pause, skip or
   remove from any Chatty tab - one of them plays. It goes quiet while you
   dictate. Off until you turn it on in Settings.
 

@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.1
+
+### Changed
+
+- **More radio stations.** A search shows up to 100 stations, and the list
+  before you search has twelve genres of ten.
+- The radio strip starts with Play and Next; remove, stations and off appear
+  when you point at it.
+
+### Fixed
+
+- After a station you were only listening to would not play, the strip's
+  remove button could delete one of your saved stations.
+
 ## 0.8.0
 
 ### Added
