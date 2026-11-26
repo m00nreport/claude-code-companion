@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.8.0
+
+### Added
+
+- **Reply to part of an answer.** Select text in a reply and press Reply: it
+  goes above the message box as a quote, and your message answers it. Copy
+  sits beside Reply.
+- **Radio.** A strip above the message box with your own stations: play,
+  pause, skip and remove from any tab. Pick from popular stations by genre or
+  search for one, and listen before you add it. It goes quiet while you
+  dictate. Turn it on in Settings.
+
 ## 0.7.3
 
 ### Fixed

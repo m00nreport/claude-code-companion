@@ -118,6 +118,12 @@ how the plan is going, and how much each step cost.
 
   ![A workflow as a table: one row per agent, with model, tokens and time](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/workflow-table.png)
 
+- **Radio.** Music in a strip above the message box while Claude works. Press
+  + to pick from popular stations by genre or search the open Radio Browser
+  directory, and listen to a station before you add it. Play, pause, skip or
+  remove from any Chatty tab - one of them plays. It goes quiet while you
+  dictate. Off until you turn it on in Settings.
+
 ## Everything the official extension does, too
 
 - Chat in an editor tab, with live Markdown replies and code blocks you can copy
@@ -196,6 +202,9 @@ how the plan is going, and how much each step cost.
   in the next; reload the window and each comes back the way you left it. A new
   tab opens with whatever you chose last.
 - **Click any image to see it big.**
+- **Reply to part of an answer.** Select text in a reply and press Reply: the
+  part you picked goes above the message box and is sent as a quote, so Claude
+  knows what you are answering. Copy sits beside it.
 
 ## The settings menu
 
@@ -214,6 +223,7 @@ Open the settings menu in the message box to set:
   your own `~/.claude/settings.json` is one the panel would otherwise have no
   way to tell you about.
 - **Sending mid-turn** - Steer, Interrupt or Queue (see above).
+- **Radio** - the radio strip above the message box (see above).
 
 ![The model menu, with the models Claude Code offers and older ones you add yourself](https://raw.githubusercontent.com/m00nreport/claude-code-companion/main/public/features-images/settings-models.png)
 
@@ -312,22 +322,31 @@ published it, and drawing what it reports.
 - **There is no account here and no server here.** This extension has no
   backend, nothing to sign up for, and nowhere of its own to send anything.
 - **No telemetry, no analytics, no crash reporting.** There is no such library
-  in it, and the panel itself cannot reach the network at all - it is loaded
-  under a `default-src 'none'` Content Security Policy. Claude Code itself
+  in it, and the panel itself cannot reach the network - it is loaded under a
+  `default-src 'none'` Content Security Policy, with one opening: audio from
+  the radio stations you choose, while Radio is on. Claude Code itself
   follows VS Code's telemetry setting: turn it off there, and the sessions this
   panel starts send no usage metrics or error reports.
 - **Nothing of yours is uploaded, indexed or copied anywhere** beyond what
   Claude Code itself does with the folder you opened.
 - **What it keeps, it keeps on this machine**, in VS Code's own storage: your
-  settings, the model list, the rate-limit figures on the bar, and any image
-  you drop on the message box. That is the whole list.
+  settings, the model list, the rate-limit figures on the bar, any image you
+  drop on the message box, and the radio stations you saved. That is the whole
+  list.
 
-One feature is the exception, and it is **off until you turn it on**:
-**Microphone** (Settings > Appearance) sends what you say to Deepgram, on
-**your own** Deepgram account. The first time, it asks for an API key - a new
-account at [console.deepgram.com](https://console.deepgram.com) comes with free
-credit and asks for no card. The key is kept in VS Code's secret storage, and
-"Chatty: Forget Deepgram Key" removes it. Deepgram, and Claude Code itself, are
+Two features are the exception, and both are **off until you turn them on**:
+
+- **Microphone** (Settings > Appearance) sends what you say to Deepgram, on
+  **your own** Deepgram account. The first time, it asks for an API key - a new
+  account at [console.deepgram.com](https://console.deepgram.com) comes with
+  free credit and asks for no card. The key is kept in VS Code's secret
+  storage, and "Chatty: Forget Deepgram Key" removes it.
+- **Radio** (Settings) asks the open [Radio Browser](https://www.radio-browser.info)
+  directory for stations when you open the station list or search it, and
+  plays the stations you pick straight from their own servers, which see your
+  IP address the way any radio player's would.
+
+Deepgram, Radio Browser, the stations you play, and Claude Code itself, are
 every outbound connection this extension is capable of making; your Claude
 sign-in is never read by it.
 
